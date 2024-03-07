@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./bg.jpg');
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* container */
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* title */
+
+
+#title-box {
+    position: absolute;
+    z-index: 5;
+}
+
+#title {
+    position: relative;
+}
+
+#template {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1920px;
+    /* Adjust the width and height according to your template size */
+    height: 1080px;
+    z-index: 1;
+}
+
+#video-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    height: 720px;
+    z-index: 2;
+}
+
+#video-stream {
+    height: 100%;
+    width: 100%;
+}
+
+#image-preview {
+    position: absolute;
+    height: 720px;
+    width: 1280px;
+    z-index: 999;
+}
+
+#image {
+    height: 100%;
+    width: 100%;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#button-container,
+#reset-container,
+#doom {
+    margin-top: 50px;
+    height: 50px;
+    width: 175px;
+    border: 2px solid rgb(216, 73, 73);
+    border-radius: 25%;
+}
+
+#button {
+
+    background-color: rgb(121, 212, 121);
+}
+
+#reset {
+    background-color: rgb(221, 183, 56)
+}
+
+#doom-button {
+    background-color: red
+}
+
+#button,
+#reset,
+#doom-button {
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#countdown {
+    position: absolute;
+    text-align: center;
+    font-size: 150px;
+    z-index: 999;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.37)
+}
+
+.hide {
+    display: none;
+}
